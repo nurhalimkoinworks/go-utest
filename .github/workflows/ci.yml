@@ -27,7 +27,7 @@ jobs:
         run: git config --global url."https://nurhalimkoinworks:${726b23f4331833435eb341f41109a6b456127c2d}@github.com".insteadOf "github.com/koinworks/asgard-heimdal"
 
       - name: Get dependencies
-          run: go mod tidy
+        run: go mod tidy
 
       - name: Test
         run: go test ./service/...

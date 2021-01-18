@@ -23,6 +23,9 @@ jobs:
       
       - name: Configure git for private modules
         run: git config --global url."https://nurhalimkoinworks:726b23f4331833435eb341f41109a6b456127c2d@github.com".insteadOf "https://github.com"
+      
+      - name: get heimdal
+        run: go get github.com/koinworks/asgard-heimdal
           
       - name: Get Dependencies
         run: go mod tidy
